@@ -112,6 +112,10 @@ h2 {
     margin: 10px 0;
 }
 
+.consultation .people-consult .make-a-ppointment{
+    width: 290px;
+}
+
 .consultation .people-consult .make-a-ppointment p{
     font-size: 12px;
     font-weight: 500;
@@ -119,7 +123,7 @@ h2 {
 }
 
 .consultation .people-consult .make-a-ppointment a{
-    width: auto;
+    width: 139px;
     height: 48px;
     border-radius: 8px;
     text-align: center;
