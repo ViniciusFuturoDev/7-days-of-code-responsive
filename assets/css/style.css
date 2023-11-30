@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    color: #464646;
+    background-color: #faf8fe;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 105px;
+    margin: 15px 0;
+}
+
+header img {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin: 35px 16px 20px 16px;
+}
+
+header .header-texts h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+header .header-texts p {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.today, .tomorrow, .wednesday {
+    margin: 0 0 0 16px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    
+}
+
+.consultation {
+    width: 90vw;
+    height: 170px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 16px;
+    margin: 50px 0 50px 0;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultation .people-consult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+}
+
+.consultation .people-consult .flex-direction-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.consultation .people-consult .profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.consultation .people-consult .profile-name-and-icon-chat{
+    display: flex;
+    align-items: center;
+}
+
+.consultation .people-consult .profile-name-and-icon-chat h4{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.consultation .people-consult .profile-name-and-icon-chat .icon-chat{
+    margin-left: 160px;
+}
+
+.consultation .people-consult .icon-and-text{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #A3A3A3;
+    margin-top: 5px;
+}
+
+.consultation .people-consult .line{
+    height: 1px;
+    background-color: #464646;
+    opacity: 0.1;
+    margin: 10px 0;
+}
+
+.consultation .people-consult .make-a-ppointment p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.consultation .people-consult .make-a-ppointment a{
+    width: 139px;
+    height: 48px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 16px 13px;
+}
+
+.consultation .people-consult .make-a-ppointment .button-orange{
+    background: #FFB050;
+    color: #FFF;
+    margin-right: 20px;
+}
+
+.consultation .people-consult .make-a-ppointment .button-white{
+    border: 1px solid #ECECEC;
+    color: #464646;
+}
+
+.consultation .people-consult .make-a-ppointment .button-cian{
+    background-color: #4894FF;
+    color: #FFF;
+    display: block;
+    width: 100%;
+    margin-top: -15px;
+}
+
+
