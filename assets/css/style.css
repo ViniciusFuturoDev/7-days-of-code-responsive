@@ -35,10 +35,11 @@ header .header-texts h1 {
 header .header-texts p {
     color: #a3a3a3;
     font-size: 14px;
-    font-weight: 400;
 }
 
-.today, .tomorrow, .wednesday {
+.today,
+.tomorrow,
+.wednesday {
     margin: 0 0 0 16px;
 }
 
@@ -46,11 +47,10 @@ h2 {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 8px;
-    
 }
 
 .consultation {
-    width: 90vw;
+    max-width: 90vw;
     height: 170px;
     border-radius: 8px;
     background-color: #fff;
@@ -69,7 +69,7 @@ h2 {
     width: 70vw;
 }
 
-.consultation .people-consult .flex-direction-row{
+.consultation .people-consult .flex-direction-row {
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
@@ -82,47 +82,52 @@ h2 {
     margin-right: 16px;
 }
 
-.consultation .people-consult .profile-name-and-icon-chat{
+.consultation .people-consult .profile-name-and-icon-chat {
     display: flex;
     align-items: center;
 }
 
-.consultation .people-consult .profile-name-and-icon-chat h4{
+.consultation .people-consult .profile-name-and-icon-chat h4 {
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
 }
 
-.consultation .people-consult .profile-name-and-icon-chat .icon-chat{
+.consultation .people-consult .profile-name-and-icon-chat .icon-chat {
     margin-left: 160px;
 }
 
-.consultation .people-consult .icon-and-text{
+.consultation .people-consult .icon-and-text {
     display: flex;
     align-items: center;
     gap: 7px;
-    color: #A3A3A3;
+    color: #a3a3a3;
     margin-top: 5px;
 }
 
-.consultation .people-consult .line{
+.consultation .people-consult .line {
     height: 1px;
     background-color: #464646;
     opacity: 0.1;
     margin: 10px 0;
 }
 
-.consultation .people-consult .make-a-ppointment{
+.consultation .people-consult .make-a-ppointment {
     width: 290px;
 }
 
-.consultation .people-consult .make-a-ppointment p{
+.consultation .people-consult .button {
+    display: flex;
+    align-items: center;
+}
+
+.consultation .people-consult .make-a-ppointment p {
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 30px;
 }
 
-.consultation .people-consult .make-a-ppointment a{
+.consultation .people-consult .make-a-ppointment a {
     width: 139px;
     height: 48px;
     border-radius: 8px;
@@ -133,23 +138,133 @@ h2 {
     padding: 16px 13px;
 }
 
-.consultation .people-consult .make-a-ppointment .button-orange{
-    background: #FFB050;
-    color: #FFF;
+.consultation .people-consult .make-a-ppointment .button-orange {
+    background: #ffb050;
+    color: #fff;
     margin-right: 15px;
 }
 
-.consultation .people-consult .make-a-ppointment .button-white{
-    border: 1px solid #ECECEC;
+.consultation .people-consult .make-a-ppointment .button-white {
+    border: 1px solid #ececec;
     color: #464646;
 }
 
-.consultation .people-consult .make-a-ppointment .button-cian{
-    background-color: #4894FF;
-    color: #FFF;
+.consultation .people-consult .make-a-ppointment .button-cian {
+    background-color: #4894ff;
+    color: #fff;
     display: block;
     width: 100%;
     margin-top: -15px;
 }
 
+.button-more{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 30px;
+    background-color: rgb(72, 148, 255);
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.60));
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
 
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 58px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 12px 12px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer ul div {
+    text-align: center;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #464646;
+}
+
+footer ul a li {
+    list-style: none;
+}
+
+footer ul div a li p{
+    font-size: 12px;
+}
+
+footer ul .consults a li p{
+    color: #4894FF;
+}
+
+
+
+
+
+@media (min-width: 366px) (max-width: 370px) {
+
+    .consultation .people-consult .profile-name-and-icon-chat .icon-chat {
+        margin-left: 120px;
+    }
+
+    .consultation .people-consult .make-a-ppointment a {
+        height: 48px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 16px 13px;
+    }
+
+    .consultation .people-consult .make-a-ppointment .button-orange {
+        margin-right: 5px;
+        margin-left: -15px;
+    }
+}
+
+@media (max-width: 365px) {
+    .consultation{
+        margin-left: 3px;
+    }
+    
+    .consultation .people-consult .profile-name-and-icon-chat .icon-chat {
+        margin-left: 100px;
+    }
+
+    .consultation .people-consult .make-a-ppointment a {
+        height: 48px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 13px 10px;
+    }
+
+    .consultation .people-consult .make-a-ppointment .button-orange {
+        margin-right: 5px;
+        margin-left: -5px;
+    }
+
+    .consultation .people-consult .make-a-ppointment .button-cian{
+        width: calc(100% - 20px);
+        margin-left: -10px;
+    }
+}
